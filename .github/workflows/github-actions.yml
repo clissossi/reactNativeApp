@@ -35,7 +35,7 @@ jobs:
           token : ${{ secrets.PAT }}
           author : ${{ github.actor }}
           base : master
-          branch : ${{ github.ref }}
+          branch : ${{ github.ref_name }}
           draft : true
           
       # Runs a set of commands using the runners shell
