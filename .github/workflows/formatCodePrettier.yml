@@ -28,7 +28,7 @@ jobs:
         run: echo Hello, world!
         
       - name: Install Prettier
-        run : yarn add --dev --exact prettier
+        run : npm install --save-dev --save-exact prettier
         
       - name : Format code with Prettier
         run : prettier --write .
