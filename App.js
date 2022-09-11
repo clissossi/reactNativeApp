@@ -34,7 +34,10 @@ const Section = ({children, title}): Node => {
         style={[
           styles.sectionTitle,
           {
-            color: isDarkMode ? Colors.white : Colors.black,
+            color: isDarkMode ?
+            Colors.white : 
+            
+            Colors.black,
           },
         ]}>
         {title}
@@ -80,7 +83,7 @@ const App: () => Node = () => {
           <Section title="Debug">
             <DebugInstructions />
           </Section>
-          <Section title="Learn More">
+          <Section title="Learn More" test="ok">
             Read the docs to discover what to do next:
           </Section>
           <LearnMoreLinks />
