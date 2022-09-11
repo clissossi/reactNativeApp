@@ -86,6 +86,12 @@ const App: () => Node = () => {
           <Section title="Learn More" test="ok">
             Read the docs to discover what to do next:
           </Section>
+          <Section title="Learn More" test="okidfjfbksbkdg">
+            Read the docs to discover what to do next:
+          </Section>
+          <Section title="Learn More" test="sdkjfbskhbgkhdbghdbgekh">
+            Read the docs to discover what to do next:
+          </Section>
           <LearnMoreLinks />
         </View>
       </ScrollView>
