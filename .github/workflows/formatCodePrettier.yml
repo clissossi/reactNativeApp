@@ -31,4 +31,4 @@ jobs:
         run : yarn add prettier 
         
       - name : Format code with Prettier
-        run : yarn prettier --check App.js
+        run : yarn prettier --write --no-semi App.js
