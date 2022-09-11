@@ -28,7 +28,7 @@ jobs:
         run: echo Hello, world!
         
       - name: Install Prettier
-        run : yarn add prettier
+        run : yarn add prettier 
         
       - name : Format code with Prettier
-        run : yarn prettier --check .
+        run : yarn prettier --write App.js
