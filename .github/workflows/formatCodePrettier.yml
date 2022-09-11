@@ -32,3 +32,4 @@ jobs:
         
       - name : Format code with Prettier
         run : yarn prettier --write --jsx-single-quote --no-semi App.js
+
