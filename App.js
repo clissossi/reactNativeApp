@@ -80,12 +80,12 @@ const App: () => Node = () => {
           <Section title="See Your Changes">
             <ReloadInstructions />
           </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More" test="ok">
-            Read the docs to discover what to do next:
-          </Section>
+                <Section title="Debug" test="no but" test2="ok but">
+                  <DebugInstructions />
+                </Section>
+              <Section title="Learn More" test="ok">
+                Read the docs to discover what to do next:
+              </Section>
           <LearnMoreLinks />
         </View>
       </ScrollView>
