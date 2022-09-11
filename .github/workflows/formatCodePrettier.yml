@@ -31,4 +31,4 @@ jobs:
         run : yarn add prettier
         
       - name : Format code with Prettier
-        run : prettier --write .
+        run : yarn prettier --check .
