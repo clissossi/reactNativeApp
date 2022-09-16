@@ -46,7 +46,9 @@ const Section = ({children, title}): Node => {
         style={[
           styles.sectionDescription,
           {
-            color: isDarkMode ? Colors.light : Colors.dark,
+            color: isDarkMode ? 
+            Colors.light 
+            : Colors.dark,
           },
         ]}>
         {children}
@@ -64,27 +66,38 @@ const App: () => Node = () => {
 
   return (
     <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
+      <StatusBar barStyle={isDarkMode ? 
+                           'light-content' : 
+                           'dark-content'} />
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
         <Header />
         <View
           style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
+            backgroundColor: isDarkMode ? 
+                 Colors.black : 
+                 Colors.white,
           }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.js</Text> to change this
-            screen and then come back to see your edits.
+          <Section title='Step One'>
+            Edit <Text style={styles.highlight}>
+              App.js</Text> to change this
+            screen and then
+            come back to see your edits.
           </Section>
-          <Section title="See Your Changes">
+          <Section
+title='See Your Changes'>
             <ReloadInstructions />
           </Section>
-          <Section title="Debug">
+          <Section 
+title='Debug'>
             <DebugInstructions />
           </Section>
-          <Section title="Learn More" test="ok">
-            Read the docs to discover what to do next:
+          <Section
+ title='Learn More' 
+test="ok">
+            Read the docs
+            to discover what to do next:
           </Section>
           <LearnMoreLinks />
         </View>
