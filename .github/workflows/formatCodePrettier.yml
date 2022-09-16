@@ -22,13 +22,15 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+        with:
+          # Make sure the actual branch is checked out when running on pull requests
+          ref: ${{ github.head_ref }}
+          # This is important to fetch the changes to the previous commit
+          fetch-depth: 0
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-        
-      - name: Install Prettier
-        run : yarn add prettier@^2.7.1
-        
-      - name : Format code with Prettier
-        run : yarn prettier -w App.js
+      - name: Prettify code
+        uses: creyD/prettier_action@v4.2
+        with:
+          # This part is also where you can pass other options, for example:
+          prettier_options: --write **/*.{js,md}
+          only_changed: True
