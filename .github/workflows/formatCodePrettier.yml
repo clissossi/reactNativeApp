@@ -31,4 +31,4 @@ jobs:
         run : yarn add prettier@^2.7.1
         
       - name : Format code with Prettier
-        run : yarn prettier --write App.js
+        run : yarn prettier -w App.js
